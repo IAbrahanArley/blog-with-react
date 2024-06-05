@@ -1,10 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>miniblog</h1>
+      <BrowserRouter>
+      <Navbar/>
+        <div className='container'>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/About' element={<About/>}/>
+          </Routes>
+        </div>
+        <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
