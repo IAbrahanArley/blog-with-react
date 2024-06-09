@@ -1,6 +1,6 @@
 body{
   background-color: #f6fcff;
-  padding: o;
+  padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -35,7 +35,7 @@ nav button:hover{
 
 form{
   max-width: 40%;
-  margin: 0;
+  margin: 0 auto;
 
 }
 
